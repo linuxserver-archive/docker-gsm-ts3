@@ -1,6 +1,6 @@
 ![http://linuxserver.io](http://www.linuxserver.io/wp-content/uploads/2015/06/linuxserver_medium.png)
 
-The [LinuxServer.io](http://linuxserver.io) team brings you another quality container release featuring auto-update on startup, easy user mapping and community support. Be sure to checkout our [forums](http://forum.linuxserver.io) or for real-time support our [IRC](http://www.linuxserver.io/index.php/irc/) on freenode at `#linuxserver.io`.
+The [LinuxServer.io](https://www.linuxserver.io/) team brings you another quality container release featuring auto-update on startup, easy user mapping and community support. Be sure to checkout our [forums](https://forum.linuxserver.io/index.php) or for real-time support our [IRC](https://www.linuxserver.io/index.php/irc/) on freenode at `#linuxserver.io`.
 
 # linuxserver/<container-name>
 
@@ -17,10 +17,10 @@ docker create --name=<container-name> -v /etc/localtime:/etc/localtime:ro -v <pa
 * `-p 4242` - the port(s)
 * `-v /etc/localhost` for timesync - *optional*
 * `-v /config` -
-* `-e PGID` for for GroupID - see below for explanation
-* `-e PUID` for for UserID - see below for explanation
+* `-e PGID` for GroupID - see below for explanation
+* `-e PUID` for UserID - see below for explanation
 
-It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it quassel-core /bin/bash`.
+It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it <container-name> /bin/bash`.
 
 ### User / Group Identifiers
 
