@@ -1,4 +1,4 @@
 #!/bin/bash
 /sbin/setuser abc /config/ts3server start
-sleep 1s
+sleep 1s &&  cd /conig/serverfiles/logs
 exec /sbin/setuser abc tail -F -q --pid=$(cat /config/serverfiles/ts3server.pid) $(ls -t /config/serverfiles/logs | head -n 2)
