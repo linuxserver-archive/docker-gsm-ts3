@@ -1,11 +1,10 @@
 FROM linuxserver/baseimage
-MAINTAINER Your Name <your@email.com>
-ENV APTLIST="packages to install and update via apt"
+MAINTAINER Lonix <lonix@linuxserver.io>
+ENV APTLIST="wget mailutils postfix"
+
 #Applying stuff
 RUN apt-get update -q && \
-##DO STUFF HERE 
-## END EACH LINE WITH && \
-## EXCEPT THE LINE BELOW
+apt-get install -yq $APTLIST
 apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
 
@@ -18,7 +17,7 @@ RUN chmod -v +x /etc/service/*/run && chmod -v +x /etc/my_init.d/*.sh
 
 
 # Volumes and Ports
-VOLUME /volume
+VOLUME /config
 EXPOSE PORT
 
 ## NOTES ##
