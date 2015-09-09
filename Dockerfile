@@ -2,7 +2,7 @@ FROM linuxserver/baseimage
 MAINTAINER Lonix <lonix@linuxserver.io>
 ENV APTLIST="wget mailutils postfix"
 
-#Applying stuff
+# install packages
 RUN apt-get update -q && \
 apt-get install -yq $APTLIST && \
 apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
