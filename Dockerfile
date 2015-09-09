@@ -4,7 +4,7 @@ ENV APTLIST="wget mailutils postfix"
 
 #Applying stuff
 RUN apt-get update -q && \
-apt-get install -yq $APTLIST
+apt-get install -yq $APTLIST && \
 apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
 
