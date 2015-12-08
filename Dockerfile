@@ -19,4 +19,4 @@ usermod -d /config abc
 
 # Volumes and Ports
 VOLUME /config
-EXPOSE 9987 30033 10011 41144
+EXPOSE 9987/udp 30033 10011 41144
