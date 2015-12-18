@@ -1,5 +1,5 @@
 FROM linuxserver/baseimage
-MAINTAINER Lonix <lonix@linuxserver.io>
+MAINTAINER Lonix <lonix@linuxserver.io> Sparklyballs <sparklyballs@linuxserver.io>
 ENV APTLIST="wget mailutils postfix"
 
 # install packages
