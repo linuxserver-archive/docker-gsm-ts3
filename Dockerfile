@@ -1,6 +1,6 @@
 FROM linuxserver/baseimage
 MAINTAINER Lonix <lonix@linuxserver.io> Sparklyballs <sparklyballs@linuxserver.io>
-ENV APTLIST="wget mailutils postfix"
+ENV APTLIST="wget tmux mailutils postfix"
 
 # install packages
 RUN apt-get update -q && \
