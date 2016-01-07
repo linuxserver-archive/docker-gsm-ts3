@@ -1,10 +1,10 @@
-![http://linuxserver.io](http://www.linuxserver.io/wp-content/uploads/2015/06/linuxserver_medium.png)
+![https://linuxserver.io](https://www.linuxserver.io/wp-content/uploads/2015/06/linuxserver_medium.png)
 
 The [LinuxServer.io](https://www.linuxserver.io/) team brings you another quality container release featuring auto-update on startup, easy user mapping and community support. Be sure to checkout our [forums](https://forum.linuxserver.io/index.php) or for real-time support our [IRC](https://www.linuxserver.io/index.php/irc/) on freenode at `#linuxserver.io`.
 
 # linuxserver/gsm-ts3
 
-![http://teamspeak.com](http://teamspeak.com/assets/logos/teamspeak.svg)
+![https://teamspeak.com](https://teamspeak.com/assets/logos/teamspeak.svg)
 
 VoIP software designed with security in mind, featuring crystal clear voice quality, endless customization options, and scalabilty up to thousands of simultaneous users.
 
