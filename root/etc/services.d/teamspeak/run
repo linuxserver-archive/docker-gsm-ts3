@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bash
+
+s6-setuidgid abc /config/ts3server start
+
+until [[ -e /config/serverfiles/logs && -e /config/serverfiles/ts3server.pid ]]; do
+sleep 1s
+done
+
+exec s6-setuidgid abc tail -F -q --pid=$(cat /config/serverfiles/ts3server.pid) \
+$(ls -t /config/serverfiles/logs | head -n 2)
