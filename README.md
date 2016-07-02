@@ -53,7 +53,7 @@ There are no setup required, just start the container, watch the log and note th
 `Important, for unraid users, use the command line log rather than the webui log, docker logs -f gsm-ts3`
 
 
-## INFO
+## Info
 
 * Shell access whilst the container is running: `docker exec -it gsm-ts3 /bin/bash`
 * To monitor the logs of the container in realtime: `docker logs -f gsm-ts3`
