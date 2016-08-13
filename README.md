@@ -1,6 +1,6 @@
 ![https://linuxserver.io](https://www.linuxserver.io/wp-content/uploads/2015/06/linuxserver_medium.png)
 
-The [LinuxServer.io](https://linuxserver.io) team brings you another container release featuring auto-update on startup, easy user mapping and community support. Find us for support at:
+The [LinuxServer.io](https://linuxserver.io) team brings you another container release featuring easy user mapping and community support. Find us for support at:
 * [forum.linuxserver.io](https://forum.linuxserver.io)
 * [IRC](https://www.linuxserver.io/index.php/irc/) on freenode at `#linuxserver.io`
 * [Podcast](https://www.linuxserver.io/index.php/category/podcast/) covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
@@ -28,12 +28,12 @@ linuxserver/gsm-ts3
 * `-p 30033` - Filetransfer
 * `-p 10011` - Serverquery
 * `-p 41144` - tsdns
-* `-v /etc/localhost` for timesync - *optional*
-* `-v /config` -
+* `-v /etc/localtime` for timesync - *optional*
+* `-v /config` - volume for config files
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
-
+It is based on ubuntu xenial with s6 overlay, for shell access whilst the container is running do `docker exec -it gsm-ts3 /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -48,20 +48,18 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Setting up the application 
 
-There are no setup required, just start the container, watch the log and note the Serverquery user\pass, and the token.
+There is no setup required, just start the container, watch the log and note the Serverquery user\pass, and the token.
 
 `Important, for unraid users, use the command line log rather than the webui log, docker logs -f gsm-ts3`
 
 
-## Updates
+## Info
 
 * Shell access whilst the container is running: `docker exec -it gsm-ts3 /bin/bash`
-* Upgrade to the latest version: `docker restart gsm-ts3`
 * To monitor the logs of the container in realtime: `docker logs -f gsm-ts3`
-
-
 
 ## Versions
 
++ **13.08.16:** Rebase to lsiobase/xenial
 + **10.09.15:** Inital Release. 
 

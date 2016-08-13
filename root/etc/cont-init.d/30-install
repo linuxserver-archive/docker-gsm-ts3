@@ -1,0 +1,16 @@
+#!/usr/bin/with-contenv bash
+
+# fetch installer
+[[ ! -e /config/ts3server ]] && \
+	wget -O /config/ts3server http://gameservermanagers.com/dl/ts3server
+
+# permissions
+chmod +x \
+	/config/ts3server
+chown abc:abc -R \
+	/config
+
+if [ ! -f /config/serverfiles/ts3server_minimal_runscript.sh ]; then
+cd /config
+s6-setuidgid abc /config/ts3server auto-install
+fi

@@ -1,18 +1,36 @@
-FROM linuxserver/baseimage
-MAINTAINER Lonix <lonix@linuxserver.io> Sparklyballs <sparklyballs@linuxserver.io>
-ENV APTLIST="wget tmux mailutils postfix"
+FROM lsiobase/xenial
+MAINTAINER sparklyballs
+
+# environment settings
+ARG DEBIAN_FRONTEND="noninteractive"
+ENV LANG="en_US.UTF-8" \
+LANGUAGE="en_US:en"
+
+# Set the locale
+RUN \
+ locale-gen en_US.UTF-8
 
 # install packages
-RUN apt-get update -q && \
-apt-get install -yq $APTLIST && \
-apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
+RUN \
+ apt-get update && \
+ apt-get install -y \
+	bsdmainutils \
+	bzip2 \
+	mailutils \
+	postfix \
+	python \
+	tmux \
+	wget && \
 
+# cleanup
+ apt-get clean && \
+ rm -rf \
+	/var/lib/apt/lists/* \
+	/var/tmp/*
 
-#Adding Custom files
-ADD init/ /etc/my_init.d/
-ADD services/ /etc/service/
-RUN chmod -v +x /etc/service/*/run && chmod -v +x /etc/my_init.d/*.sh
+# add local files
+COPY root/ /
 
-# Volumes and Ports
-VOLUME /config
+# ports and volumes
 EXPOSE 9987/udp 30033 10011 41144
+VOLUME /config
