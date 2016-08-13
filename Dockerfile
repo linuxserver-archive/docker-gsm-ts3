@@ -1,10 +1,16 @@
 FROM lsiobase/xenial
 MAINTAINER sparklyballs
 
-# set environment variables
+# environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
+ENV LANG="en_US.UTF-8" \
+LANGUAGE="en_US:en"
 
-# install packages
+# Set the locale
+RUN \
+ locale-gen en_US.UTF-8
+
+# install packages
 RUN \
  apt-get update && \
  apt-get install -y \
@@ -16,16 +22,15 @@ RUN \
 	tmux \
 	wget && \
 
-# cleanup
+# cleanup
  apt-get clean && \
  rm -rf \
-	/tmp/* \
 	/var/lib/apt/lists/* \
 	/var/tmp/*
 
-# add local files
+# add local files
 COPY root/ /
 
-# ports and volumes
-VOLUME /config
+# ports and volumes
 EXPOSE 9987/udp 30033 10011 41144
+VOLUME /config

@@ -28,12 +28,12 @@ linuxserver/gsm-ts3
 * `-p 30033` - Filetransfer
 * `-p 10011` - Serverquery
 * `-p 41144` - tsdns
-* `-v /etc/localhost` for timesync - *optional*
-* `-v /config` -
+* `-v /etc/localtime` for timesync - *optional*
+* `-v /config` - volume for config files
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
-
+It is based on ubuntu xenial with s6 overlay, for shell access whilst the container is running do `docker exec -it gsm-ts3 /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -58,9 +58,8 @@ There are no setup required, just start the container, watch the log and note th
 * Shell access whilst the container is running: `docker exec -it gsm-ts3 /bin/bash`
 * To monitor the logs of the container in realtime: `docker logs -f gsm-ts3`
 
-
 ## Versions
 
-+ **02.07.16:** Rebase to lsiobase/xenial
++ **13.08.16:** Rebase to lsiobase/xenial
 + **10.09.15:** Inital Release. 
 
