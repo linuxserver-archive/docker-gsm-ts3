@@ -48,7 +48,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Setting up the application 
 
-There are no setup required, just start the container, watch the log and note the Serverquery user\pass, and the token.
+There is no setup required, just start the container, watch the log and note the Serverquery user\pass, and the token.
 
 `Important, for unraid users, use the command line log rather than the webui log, docker logs -f gsm-ts3`
 
