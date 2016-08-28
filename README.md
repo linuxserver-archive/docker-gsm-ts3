@@ -13,7 +13,8 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 
 VoIP software designed with security in mind, featuring crystal clear voice quality, endless customization options, and scalabilty up to thousands of simultaneous users.
 
-![https://teamspeak.com](https://teamspeak.com/assets/logos/teamspeak.svg)
+[![teamspeak](https://teamspeak.com/assets/logos/teamspeak.svg)][ts3url]
+[ts3url]: https://teamspeak.com
 
 ## Usage
 
