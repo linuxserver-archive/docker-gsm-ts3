@@ -6,10 +6,14 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 * [Podcast](https://www.linuxserver.io/index.php/category/podcast/) covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/gsm-ts3
-
-![https://teamspeak.com](https://teamspeak.com/assets/logos/teamspeak.svg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/gsm-ts3.svg)][hub]
+[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/gsm-ts3.svg)][hub]
+[![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-gsm-ts3)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-gsm-ts3/)
+[hub]: https://hub.docker.com/r/linuxserver/gsm-ts3/
 
 VoIP software designed with security in mind, featuring crystal clear voice quality, endless customization options, and scalabilty up to thousands of simultaneous users.
+
+![https://teamspeak.com](https://teamspeak.com/assets/logos/teamspeak.svg)
 
 ## Usage
 
@@ -60,6 +64,7 @@ There is no setup required, just start the container, watch the log and note the
 
 ## Versions
 
++ **28.08.16:** Add badges to README.
 + **13.08.16:** Rebase to lsiobase/xenial
 + **10.09.15:** Inital Release. 
 
