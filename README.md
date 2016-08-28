@@ -8,7 +8,7 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 # linuxserver/gsm-ts3
 [![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/gsm-ts3.svg)][hub]
 [![Docker Stars](https://img.shields.io/docker/stars/linuxserver/gsm-ts3.svg)][hub]
-[![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-gsm-ts3)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-gsm-ts3/)
+[![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-teamspeak)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-teamspeak/)
 [hub]: https://hub.docker.com/r/linuxserver/gsm-ts3/
 
 VoIP software designed with security in mind, featuring crystal clear voice quality, endless customization options, and scalabilty up to thousands of simultaneous users.
