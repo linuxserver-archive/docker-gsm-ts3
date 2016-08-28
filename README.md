@@ -65,7 +65,7 @@ There is no setup required, just start the container, watch the log and note the
 
 ## Versions
 
-+ **28.08.16:** Add badges to README.
++ **28.08.16:** Add badges to README, improve dependencies.
 + **13.08.16:** Rebase to lsiobase/xenial
 + **10.09.15:** Inital Release. 
 

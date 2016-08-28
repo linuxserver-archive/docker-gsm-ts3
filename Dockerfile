@@ -16,10 +16,14 @@ RUN \
  apt-get install -y \
 	bsdmainutils \
 	bzip2 \
+	curl \
+	file \
+	libmariadb2 \
 	mailutils \
 	postfix \
 	python \
 	tmux \
+	util-linux \
 	wget && \
 
 # cleanup
