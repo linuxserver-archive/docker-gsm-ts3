@@ -23,19 +23,15 @@ VoIP software designed with security in mind, featuring crystal clear voice qual
 
 ```
 docker create --name=gsm-ts3 \
+--net=host \
 -v /etc/localtime:/etc/localtime:ro \
 -v <path to data>:/config \
 -e PGID=<gid> -e PUID=<uid> \
--p 30033:30033 -p 9987:9987 \
--p 10011:10011 -p 41144:41144 \
 linuxserver/gsm-ts3
 ```
 
 **Parameters**
-* `-p 9987` - Voice communication
-* `-p 30033` - Filetransfer
-* `-p 10011` - Serverquery
-* `-p 41144` - tsdns
+* `--net=host` - Shares host networking with container, **required**
 * `-v /etc/localtime` for timesync - *optional*
 * `-v /config` - volume for config files
 * `-e PGID` for GroupID - see below for explanation
@@ -68,6 +64,7 @@ There is no setup required, just start the container, watch the log and note the
 
 ## Versions
 
++ **18.09.16:** Correct README with net=host instead of port mappings.
 + **10.09.16:** Add layer badges to README.
 + **28.08.16:** Add badges to README, improve dependencies.
 + **13.08.16:** Rebase to lsiobase/xenial
