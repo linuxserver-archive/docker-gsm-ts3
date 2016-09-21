@@ -65,7 +65,7 @@ There is no setup required, just start the container, watch the log and note the
 ## Versions
 
 + **21.09.16:** Ipv6 fix for unraid, make separate tag for unraid, other users shouldn't have to
-+ suffer because unraid doesn't support ipv6
+suffer because unraid doesn't support ipv6
 + **18.09.16:** Correct README with net=host instead of port mappings.
 + **10.09.16:** Add layer badges to README.
 + **28.08.16:** Add badges to README, improve dependencies.
