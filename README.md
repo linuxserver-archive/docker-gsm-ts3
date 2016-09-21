@@ -64,6 +64,7 @@ There is no setup required, just start the container, watch the log and note the
 
 ## Versions
 
++ **21.09.16:** Ipv6 fix for dumbraid
 + **18.09.16:** Correct README with net=host instead of port mappings.
 + **10.09.16:** Add layer badges to README.
 + **28.08.16:** Add badges to README, improve dependencies.
