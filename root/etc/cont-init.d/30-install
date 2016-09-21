@@ -1,14 +1,22 @@
 #!/usr/bin/with-contenv bash
 
+# make folders
+mkdir -p /config/serverfiles
+
 # fetch installer
-[[ ! -e /config/ts3server ]] && \
-	wget -O /config/ts3server http://gameservermanagers.com/dl/ts3server
+if [ ! -e /config/ts3server ]; then
+wget -O /config/ts3server http://gameservermanagers.com/dl/ts3server
+chmod +x /config/ts3server
+fi
+
+# copy default config
+if [ ! -e /config/serverfiles/lgsm-default.ini ]; then
+cp /defaults/lgsm-default.ini /config/serverfiles/lgsm-default.ini
+chmod 440 /config/serverfiles/lgsm-default.ini
+fi
 
 # permissions
-chmod +x \
-	/config/ts3server
-chown abc:abc -R \
-	/config
+chown abc:abc -R /config
 
 if [ ! -f /config/serverfiles/ts3server_minimal_runscript.sh ]; then
 cd /config
