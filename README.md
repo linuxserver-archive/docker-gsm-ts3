@@ -11,7 +11,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/gsm-ts3
-[![](https://images.microbadger.com/badges/image/linuxserver/gsm-ts3.svg)](http://microbadger.com/images/linuxserver/gsm-ts3 "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/gsm-ts3.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/gsm-ts3.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-teamspeak)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-teamspeak/)
+[![](https://images.microbadger.com/badges/version/linuxserver/gsm-ts3.svg)](https://microbadger.com/images/linuxserver/gsm-ts3 "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/gsm-ts3.svg)](http://microbadger.com/images/linuxserver/gsm-ts3 "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/gsm-ts3.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/gsm-ts3.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-teamspeak)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-teamspeak/)
 [hub]: https://hub.docker.com/r/linuxserver/gsm-ts3/
 
 VoIP software designed with security in mind, featuring crystal clear voice quality, endless customization options, and scalabilty up to thousands of simultaneous users.
@@ -62,8 +62,17 @@ There is no setup required, just start the container, watch the log and note the
 * Shell access whilst the container is running: `docker exec -it gsm-ts3 /bin/bash`
 * To monitor the logs of the container in realtime: `docker logs -f gsm-ts3`
 
+* container version number 
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' gsm-ts3`
+
+* image version number
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/gsm-ts3`
+
 ## Versions
 
++ **14-10-16:** Add version layer information.
 + **21.09.16:** Ipv6 fix for unraid, make separate tag for unraid, other users shouldn't have to
 suffer because unraid doesn't support ipv6
 + **18.09.16:** Correct README with net=host instead of port mappings.

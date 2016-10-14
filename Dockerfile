@@ -6,6 +6,11 @@ ARG DEBIAN_FRONTEND="noninteractive"
 ENV LANG="en_US.UTF-8" \
 LANGUAGE="en_US:en"
 
+# set version label
+ARG BUILD_DATE
+ARG VERSION
+LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
+
 # Set the locale
 RUN \
  locale-gen en_US.UTF-8
