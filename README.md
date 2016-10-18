@@ -78,7 +78,7 @@ There is no setup required, just start the container, watch the log and note the
 
 ## Versions
 
-+ **14-10-16:** Add version layer information.
++ **14.10.16:** Add version layer information.
 + **21.09.16:** Ipv6 fix for unraid, make separate tag for unraid, other users shouldn't have to
 suffer because unraid doesn't support ipv6
 + **18.09.16:** Correct README with net=host instead of port mappings.
