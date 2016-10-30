@@ -19,6 +19,6 @@ fi
 chown abc:abc -R /config
 
 if [ ! -f /config/serverfiles/ts3server_minimal_runscript.sh ]; then
-cd /config
+cd /config || exit
 s6-setuidgid abc /config/ts3server auto-install
 fi
