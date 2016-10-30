@@ -10,9 +10,9 @@ chmod +x /config/ts3server
 fi
 
 # copy default config
-if [ ! -e /config/serverfiles/lgsm-default.ini ]; then
-cp /defaults/lgsm-default.ini /config/serverfiles/lgsm-default.ini
-chmod 440 /config/serverfiles/lgsm-default.ini
+if [ ! -e /config/serverfiles/ts3-server.ini ]; then
+cp /defaults/ts3-server.ini /config/serverfiles/ts3-server.ini
+chmod 440 /config/serverfiles/ts3-server.ini
 fi
 
 # permissions
