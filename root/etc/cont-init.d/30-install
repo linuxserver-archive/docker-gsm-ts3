@@ -10,15 +10,15 @@ chmod +x /config/ts3server
 fi
 
 # copy default config
-if [ ! -e /config/serverfiles/lgsm-default.ini ]; then
-cp /defaults/lgsm-default.ini /config/serverfiles/lgsm-default.ini
-chmod 440 /config/serverfiles/lgsm-default.ini
+if [ ! -e /config/serverfiles/ts3-server.ini ]; then
+cp /defaults/ts3-server.ini /config/serverfiles/ts3-server.ini
+chmod 440 /config/serverfiles/ts3-server.ini
 fi
 
 # permissions
 chown abc:abc -R /config
 
 if [ ! -f /config/serverfiles/ts3server_minimal_runscript.sh ]; then
-cd /config
+cd /config || exit
 s6-setuidgid abc /config/ts3server auto-install
 fi
