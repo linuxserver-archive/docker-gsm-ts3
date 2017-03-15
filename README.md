@@ -2,6 +2,8 @@
 [forumurl]: https://forum.linuxserver.io
 [ircurl]: https://www.linuxserver.io/irc/
 [podcasturl]: https://www.linuxserver.io/podcast/
+[appurl]: https://teamspeak.com
+[hub]: https://hub.docker.com/r/linuxserver/gsm-ts3/
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
@@ -12,12 +14,10 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 # linuxserver/gsm-ts3
 [![](https://images.microbadger.com/badges/version/linuxserver/gsm-ts3.svg)](https://microbadger.com/images/linuxserver/gsm-ts3 "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/gsm-ts3.svg)](http://microbadger.com/images/linuxserver/gsm-ts3 "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/gsm-ts3.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/gsm-ts3.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-teamspeak)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-teamspeak/)
-[hub]: https://hub.docker.com/r/linuxserver/gsm-ts3/
 
 VoIP software designed with security in mind, featuring crystal clear voice quality, endless customization options, and scalabilty up to thousands of simultaneous users.
 
-[![teamspeak](https://teamspeak.com/assets/logos/teamspeak.svg)][ts3url]
-[ts3url]: https://teamspeak.com
+[![teamspeak](https://teamspeak.com/assets/logos/teamspeak.svg)][appurl]
 
 ## Usage
 
