@@ -29,6 +29,8 @@ RUN \
 	python \
 	tmux \
 	util-linux \
+        unzip \
+        binutils \
 	wget && \
 
 # cleanup
