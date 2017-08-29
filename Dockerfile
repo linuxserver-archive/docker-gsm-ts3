@@ -19,6 +19,7 @@ RUN \
 RUN \
  apt-get update && \
  apt-get install -y \
+        binutils \
 	bsdmainutils \
 	bzip2 \
 	curl \
@@ -28,9 +29,8 @@ RUN \
 	postfix \
 	python \
 	tmux \
-	util-linux \
         unzip \
-        binutils \
+	util-linux \
 	wget && \
 
 # cleanup
