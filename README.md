@@ -17,7 +17,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 
 VoIP software designed with security in mind, featuring crystal clear voice quality, endless customization options, and scalabilty up to thousands of simultaneous users.
 
-[![teamspeak](https://teamspeak.com/assets/logos/teamspeak.svg)][appurl]
+[![teamspeak](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/teamspeak-banner.png)][appurl]
 
 ## Usage
 
