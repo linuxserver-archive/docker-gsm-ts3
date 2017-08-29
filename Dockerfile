@@ -19,7 +19,7 @@ RUN \
 RUN \
  apt-get update && \
  apt-get install -y \
-        binutils \
+	binutils \
 	bsdmainutils \
 	bzip2 \
 	curl \
@@ -29,7 +29,7 @@ RUN \
 	postfix \
 	python \
 	tmux \
-        unzip \
+	unzip \
 	util-linux \
 	wget && \
 
