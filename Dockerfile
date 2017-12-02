@@ -17,22 +17,24 @@ RUN \
 
 # install packages
 RUN \
+ dpkg --add-architecture i386 && \
  apt-get update && \
  apt-get install -y \
+	bc \
 	binutils \
 	bsdmainutils \
 	bzip2 \
+	ca-certificates \
 	curl \
 	file \
+	gzip \
 	libmariadb2 \
 	mailutils \
 	postfix \
 	python \
-	tmux \
 	unzip \
 	util-linux \
 	wget && \
-
 # cleanup
  apt-get clean && \
  rm -rf \
