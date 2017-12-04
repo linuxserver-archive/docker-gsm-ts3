@@ -19,6 +19,7 @@ RUN \
 RUN \
  apt-get update && \
  apt-get install -y \
+	bc \
 	binutils \
 	bsdmainutils \
 	bzip2 \
