@@ -8,4 +8,4 @@ done
 
 exec \
 	s6-setuidgid abc tail -F -q --pid="$(cat /config/serverfiles/ts3server.pid)" \
-	$(find /config/serverfiles/logs/*.log -printf '%p\n' |sort | head -n 2)
+	$(find /config/serverfiles/logs/*.log -printf '%p\n' |sort -r | head -n 2)
