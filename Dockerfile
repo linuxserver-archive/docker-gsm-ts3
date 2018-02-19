@@ -8,6 +8,7 @@ LABEL maintainer="sparklyballs"
 
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
+ENV TS3SERVER_LICENSE="accept"
 
 RUN \
  echo "**** install packages ****" && \

@@ -78,6 +78,7 @@ There is no setup required, just start the container, watch the log and note the
 
 ## Versions
 
++ **19.02.18:** Add license accept variable and print warning in init to view license.
 + **12.12.17:** Fix continuation lines.
 + **03.12.17:** Add bc dependency.
 + **29.08.17:** Add binutils and unzip dependencies (thanks n3mur1t0r).
