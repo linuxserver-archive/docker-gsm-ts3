@@ -7,6 +7,10 @@ mkdir -p /config/serverfiles
 if [ ! -e /config/ts3server ]; then
 wget -O /config/ts3server http://gameservermanagers.com/dl/ts3server
 chmod +x /config/ts3server
+# update installer
+else
+cd /config || exit
+s6-setuidgid abc /config/ts3server update-lgsm
 fi
 
 # copy default config
@@ -32,4 +36,8 @@ cat > $VIEW_LICENSE <<-EOFLICENSE
 EOFLICENSE
 printf '\n\n\n%s\n\n\n' "$(</tmp/viewlicense.nfo)"
 rm -f /tmp/viewlicense.nfo
+# update app
+else
+cd /config || exit
+s6-setuidgid abc /config/ts3server update
 fi
