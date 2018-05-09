@@ -5,7 +5,7 @@ mkdir -p /config/serverfiles
 
 # fetch installer
 if [ ! -e /config/ts3server ]; then
-wget -O /config/ts3server http://gameservermanagers.com/dl/ts3server
+wget -O /config/ts3server http://linuxgsm.com/dl/ts3server
 chmod +x /config/ts3server
 fi
 
