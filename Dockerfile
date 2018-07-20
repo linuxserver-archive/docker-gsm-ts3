@@ -12,6 +12,7 @@ ENV TS3SERVER_LICENSE="accept"
 
 RUN \
  echo "**** install packages ****" && \
+ dpkg --add-architecture i386 && \
  apt-get update && \
  apt-get install -y \
 	bc \
@@ -27,6 +28,8 @@ RUN \
 	tmux \
 	unzip \
 	util-linux \
+	lib32gcc1 \
+	libstdc++6:i386 \
 	wget && \
  echo "**** cleanup ****" && \
  apt-get clean && \
