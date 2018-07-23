@@ -23,6 +23,9 @@ RUN \
 	file \
 	gzip \
 	jq \
+	libmariadb2 \
+	mailutils \
+	postfix \
 	python \
 	unzip \
 	util-linux \
