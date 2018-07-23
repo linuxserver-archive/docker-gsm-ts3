@@ -18,13 +18,15 @@ RUN \
 	binutils \
 	bsdmainutils \
 	bzip2 \
+	ca-certificates \
 	curl \
 	file \
+	gzip \
+	jq \
 	libmariadb2 \
 	mailutils \
 	postfix \
 	python \
-	tmux \
 	unzip \
 	util-linux \
 	wget && \
