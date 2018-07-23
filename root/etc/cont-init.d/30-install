@@ -6,7 +6,7 @@ mkdir -p /config/serverfiles
 # fetch installer
 if [ ! -e /config/ts3server ]; then
 wget -O /tmp/linuxgsm.sh https://Linuxgsm.sh
-cd /tmp
+cd /tmp || exit
 s6-setuidgid abc /bin/bash /tmp/linuxgsm.sh ts3server
 mv /tmp/ts3server /config/ts3server
 rm -rf /tmp/l*
