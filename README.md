@@ -12,6 +12,6 @@
 * [IRC][ircurl] on freenode at `#linuxserver.io`
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
-Deprecated image
+DEPRECATED IMAGE
 
 see https://blog.linuxserver.io/2018/08/15/deprecation-of-linuxserver-gsm-ts3/ for details
